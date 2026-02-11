@@ -135,6 +135,39 @@
             </div>
         </section>
 
+        <!-- Image Popup -->
+        <div id="imagePopup" class="image-popup">
+            <span class="close-btn">&times;</span>
+            <img class="popup-content" id="popupImage">
+        </div>
+
+        <script>
+            // Get the popup
+            const popup = document.getElementById("imagePopup");
+            const popupImg = document.getElementById("popupImage");
+            const closeBtn = document.getElementsByClassName("close-btn")[0];
+
+            // Add click event to all product images
+            document.querySelectorAll('.product-image').forEach(img => {
+                img.addEventListener('click', function () {
+                    popup.style.display = "block";
+                    popupImg.src = this.src;
+                });
+            });
+
+            // Close popup when clicking (x)
+            closeBtn.onclick = function () {
+                popup.style.display = "none";
+            }
+
+            // Close popup when clicking outside the image
+            popup.onclick = function (event) {
+                if (event.target === popup) {
+                    popup.style.display = "none";
+                }
+            }
+        </script>
+
         <!-- Testimonials Section -->
         <section id="testimonials" class="content-section">
             <h2 class="section-title-2"><i class="fa-solid fa-heart"></i> Happy Hearts <i class="fa-solid fa-heart"></i>
