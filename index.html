@@ -18,6 +18,23 @@
 </head>
 
 <body>
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <img src="https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/knitting.png" alt="Loading..."
+            style="width: 80px;" class="pulse-icon">
+    </div>
+
+    <script>
+        window.addEventListener('load', function () {
+            const loader = document.querySelector('.page-loader');
+            setTimeout(() => {
+                loader.style.opacity = '0';
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 400); // Wait for transition
+            }, 800); // Keep visible for 4 seconds
+        });
+    </script>
     <div class="background-animation">
         <div class="heart h1"></div>
         <div class="heart h2"></div>
