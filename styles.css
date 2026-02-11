@@ -282,7 +282,7 @@ nav {
 /* Hero Section (Full Width) */
 .hero-banner {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background: url('https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/PXL_20260131_081150344%20(1).jpg') no-repeat center center/cover;
     position: relative;
     display: flex;
@@ -383,11 +383,22 @@ nav {
     color: var(--secondary-pink);
     text-align: center;
     text-shadow: 2px 2px white;
+    margin: 60px 0;
+}
+
+.section-title-2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2.5rem;
+    color: var(--secondary-pink);
+    text-align: center;
+    text-shadow: 2px 2px white;
+    /* margin: 60px 0; */
 }
 
 /* Shop Section & Grid */
 .content-section {
     width: 100%;
+    /* margin-top: 60px; */
 }
 
 .product-grid {
@@ -484,6 +495,10 @@ nav {
 .community-text {
     font-size: 1.2rem;
     margin-bottom: 2rem;
+}
+
+.actions {
+    margin-top: 80px;
 }
 
 .community-actions {
