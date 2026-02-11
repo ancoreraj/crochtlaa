@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crochetla - Granny hobby for mental stability!</title>
+    <meta name="description" content="Crochetla: A cute crochet hobby page. Granny hobby for mental stability!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Pacifico&family=Quicksand:wght@300;400;500;600;700&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png"
+        href="https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/knitting.png">
+</head>
+
+<body>
+    <div class="background-animation">
+        <div class="heart h1"></div>
+        <div class="heart h2"></div>
+        <div class="heart h3"></div>
+        <div class="heart h4"></div>
+        <div class="heart h5"></div>
+        <img src="https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/knitting.png"
+            class="floating-yarn fy1" alt="">
+        <img src="https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/knitting.png"
+            class="floating-yarn fy2" alt="">
+        <img src="https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/knitting.png"
+            class="floating-yarn fy3" alt="">
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="glass-header">
+        <nav>
+            <div class="nav-logo-container">
+                <div class="nav-logo">
+                    Crochetla
+                </div>
+                <div>
+                    <img src="https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/knitting.png"
+                        alt="Knitting Icon" class="nav-icon pulse-icon">
+                </div>
+            </div>
+
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-links li a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-links').classList.remove('active');
+            });
+        });
+    </script>
+
+    <!-- Hero Section (Full Width) -->
+    <section id="home" class="hero-banner">
+        <div class="hero-content">
+            <h1 class="neon-text">Crochetla</h1>
+            <p class="neon-subtext">by Emilda</p>
+            <!-- Mimicking the 'by liver' or 'by Oliver' look from image which looks like 'liver' with yarn ball O -->
+            <div class="yarn-logo-container">
+                <i class="fa-solid fa-cookie"></i>
+                <!-- Placeholder for yarn ball icon from fontawesome to replace 'O' if needed, but text says 'by liver' with yarn ball as O. I will just use text 'by Oliver' for now with a yarn ball icon -->
+            </div>
+            <!-- Actually the image says "Little Loops by Oliver" with a yarn ball. -->
+            <!-- I will stick to text "Little Loops by Oliver" -->
+
+            <div class="actions">
+                <a href="#shop" class="btn primary-btn">
+                    Start Shopping
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+
+        <!-- Shop Section -->
+        <section id="shop" class="content-section">
+            <h2 class="section-title">✨ My Creations ✨</h2>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/product-2.webp"
+                        alt="Witchy Hat" class="product-image">
+                    <h3>Witchy Hat</h3>
+                    <p class="price">$30.00</p>
+                    <button class="btn small-btn">Buy Now</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/9fc9e43b-230a-4471-aece-af1171c4f9c3%7E1.jpg"
+                        alt="Amigurumi Kitty" class="product-image">
+                    <h3>Amigurumi Kitty</h3>
+                    <p class="price">$25.00</p>
+                    <button class="btn small-btn">Buy Now</button>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/product-1.webp"
+                        alt="Cozy Mittens" class="product-image">
+                    <h3>Cozy Mittens</h3>
+                    <p class="price">$18.00</p>
+                    <button class="btn small-btn">Buy Now</button>
+                </div>
+                <!-- Product 3 -->
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <img src="https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/PXL_20260131_081150344%20(1).jpg"
+                        alt="Cozy Mittens" class="product-image">
+                    <h3>Plant Pot Cozy</h3>
+                    <p class="price">$12.00</p>
+                    <button class="btn small-btn">Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="content-section">
+            <h2 class="section-title"><i class="fa-solid fa-heart"></i> Happy Hearts <i class="fa-solid fa-heart"></i>
+            </h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide current-slide">
+                            <div class="testimonial-card glass-card-small">
+                                <div class="user-avatar">
+                                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="User 1">
+                                </div>
+                                <p class="review-text">"Sooo soft and cute! My kitty loves the little hat you made!"</p>
+                                <h4 class="user-name">- Benita.</h4>
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </li>
+                        <li class="carousel-slide">
+                            <div class="testimonial-card glass-card-small">
+                                <div class="user-avatar">
+                                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Aneka" alt="User 2">
+                                </div>
+                                <p class="review-text">"Best gift ever! The packaging was adorable too. 10/10
+                                    recommend."</p>
+                                <h4 class="user-name">- Helen.</h4>
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </li>
+                        <li class="carousel-slide">
+                            <div class="testimonial-card glass-card-small">
+                                <div class="user-avatar">
+                                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Zoe" alt="User 3">
+                                </div>
+                                <p class="review-text">"A perfect mental health buddy. Crocheting along with your
+                                    tutorials is joy!"</p>
+                                <h4 class="user-name">- Shagun.</h4>
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="carousel-btn next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+
+            <div class="carousel-nav">
+                <button class="carousel-indicator current-slide"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+            </div>
+
+            <script>
+                const track = document.querySelector('.carousel-track');
+                const slides = Array.from(track.children);
+                const nextButton = document.querySelector('.next-btn');
+                const prevButton = document.querySelector('.prev-btn');
+                const dotsNav = document.querySelector('.carousel-nav');
+                const dots = Array.from(dotsNav.children);
+
+                const slideWidth = slides[0].getBoundingClientRect().width;
+
+                // Arrange the slides next to one another
+                const setSlidePosition = (slide, index) => {
+                    slide.style.left = slideWidth * index + 'px';
+                };
+                slides.forEach(setSlidePosition);
+
+                const moveToSlide = (track, currentSlide, targetSlide) => {
+                    track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+                    currentSlide.classList.remove('current-slide');
+                    targetSlide.classList.add('current-slide');
+                }
+
+                const updateDots = (currentDot, targetDot) => {
+                    currentDot.classList.remove('current-slide');
+                    targetDot.classList.add('current-slide');
+                }
+
+                // Click left, move slides to the left
+                prevButton.addEventListener('click', e => {
+                    const currentSlide = track.querySelector('.current-slide');
+                    const prevSlide = currentSlide.previousElementSibling;
+                    const currentDot = dotsNav.querySelector('.current-slide');
+                    const prevDot = currentDot.previousElementSibling;
+
+                    if (prevSlide) {
+                        moveToSlide(track, currentSlide, prevSlide);
+                        updateDots(currentDot, prevDot);
+                    }
+                });
+
+                // Click right, move slides to the right
+                nextButton.addEventListener('click', e => {
+                    const currentSlide = track.querySelector('.current-slide');
+                    const nextSlide = currentSlide.nextElementSibling;
+                    const currentDot = dotsNav.querySelector('.current-slide');
+                    const nextDot = currentDot.nextElementSibling;
+
+                    if (nextSlide) {
+                        moveToSlide(track, currentSlide, nextSlide);
+                        updateDots(currentDot, nextDot);
+                    }
+                });
+
+                // Click nav indicators, move to that slide
+                dotsNav.addEventListener('click', e => {
+                    const targetDot = e.target.closest('button');
+
+                    if (!targetDot) return;
+
+                    const currentSlide = track.querySelector('.current-slide');
+                    const currentDot = dotsNav.querySelector('.current-slide');
+                    const targetIndex = dots.findIndex(dot => dot === targetDot);
+                    const targetSlide = slides[targetIndex];
+
+                    moveToSlide(track, currentSlide, targetSlide);
+                    updateDots(currentDot, targetDot);
+                });
+
+                // Recalculate layout on window resize
+                window.addEventListener('resize', () => {
+                    const newSlideWidth = slides[0].getBoundingClientRect().width;
+                    slides.forEach((slide, index) => {
+                        slide.style.left = newSlideWidth * index + 'px';
+                    });
+                    // Reset to current slide position to avoid misalignment
+                    const currentSlide = track.querySelector('.current-slide');
+                    track.style.transform = 'translateX(-' + currentSlide.style.left + ')';
+                });
+            </script>
+        </section>
+
+        <!-- Community Section -->
+        <section id="community" class="content-section glass-panel">
+            <h2 class="section-title">🧶 Join the Community 🧶</h2>
+            <p class="community-text">Share your patterns, get inspired, and crochet with us!</p>
+
+            <div class="community-actions">
+                <a href="https://www.instagram.com/cro_chetla/" target="_blank" class="btn instagram-btn">
+                    <i class="fab fa-instagram"></i> Follow on Instagram
+                </a>
+                <button class="btn newsletter-btn">
+                    <i class="fa-solid fa-envelope"></i> Join Newsletter
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Made with 💖 by Crochetla</p>
+    </footer>
+</body>
+
+</html>
