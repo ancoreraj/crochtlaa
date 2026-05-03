@@ -498,6 +498,20 @@ nav {
     margin-bottom: 1rem;
 }
 
+.product-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.product-link h3 {
+    transition: color 0.3s ease;
+}
+
+.product-link:hover h3 {
+    color: var(--secondary-pink);
+}
+
 /* Community Section */
 .glass-panel {
     background: var(--glass-bg);

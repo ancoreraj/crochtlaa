@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading... - Crochetla</title>
+    <meta name="description" content="Handcrafted crochet product by Crochetla">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Pacifico&family=Quicksand:wght@300;400;500;600;700&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png"
+        href="https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/knitting.png">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-66QYGEHJ3R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-66QYGEHJ3R');
+    </script>
+    <style>
+        /* Product Page Specific Styles */
+        .product-page {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 120px 2rem 2rem;
+            min-height: 80vh;
+        }
+
+        .product-detail {
+            display: flex;
+            gap: 3rem;
+            align-items: flex-start;
+            background: var(--card-bg);
+            border-radius: 30px;
+            padding: 2.5rem;
+            border: 2px solid white;
+            box-shadow: 0 5px 25px rgba(255, 105, 180, 0.15);
+        }
+
+        .product-detail-image {
+            flex: 1;
+            max-width: 450px;
+        }
+
+        .product-detail-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(255, 105, 180, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .product-detail-image img:hover {
+            transform: scale(1.02);
+        }
+
+        .product-detail-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .product-detail-info h1 {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 2.5rem;
+            color: var(--text-color);
+            line-height: 1.2;
+        }
+
+        .product-detail-price {
+            font-size: 2rem;
+            color: var(--secondary-pink);
+            font-weight: 700;
+            font-family: 'Fredoka', sans-serif;
+        }
+
+        .product-detail-desc {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #888;
+        }
+
+        .product-page .btn {
+            width: fit-content;
+            font-size: 1.2rem;
+            padding: 14px 30px;
+        }
+
+        .product-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .back-link {
+            font-family: 'Fredoka', sans-serif;
+            color: var(--secondary-pink);
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: var(--text-color);
+        }
+
+        .product-not-found {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .product-not-found h1 {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 2rem;
+            color: var(--text-color);
+            margin-bottom: 1rem;
+        }
+
+        .product-not-found p {
+            font-size: 1.2rem;
+            color: #888;
+            margin-bottom: 2rem;
+        }
+
+        .product-detail-image img {
+            cursor: pointer;
+        }
+
+        /* Image Popup */
+        .image-popup {
+            display: none;
+            position: fixed;
+            z-index: 999999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(5px);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .popup-content {
+            max-width: 90%;
+            max-height: 90vh;
+            width: auto;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255, 182, 193, 0.5);
+            object-fit: contain;
+        }
+
+        @media (max-width: 768px) {
+            .product-detail {
+                flex-direction: column;
+            }
+
+            .product-detail-image {
+                max-width: 100%;
+            }
+
+            .product-detail-info h1 {
+                font-size: 1.8rem;
+            }
+
+            .product-detail-price {
+                font-size: 1.5rem;
+            }
+
+            .product-page {
+                padding: 100px 1rem 1rem;
+            }
+
+            .popup-content {
+                max-width: 95%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-animation">
+        <div class="heart h1"></div>
+        <div class="heart h2"></div>
+        <div class="heart h3"></div>
+        <div class="heart h4"></div>
+        <div class="heart h5"></div>
+        <img src="https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/knitting.png"
+            class="floating-yarn fy1" alt="">
+        <img src="https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/knitting.png"
+            class="floating-yarn fy2" alt="">
+        <img src="https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/knitting.png"
+            class="floating-yarn fy3" alt="">
+    </div>
+
+    <header class="glass-header">
+        <div class="product-nav">
+            <div class="nav-logo-container">
+                <a href="index.html" class="nav-logo" style="text-decoration: none;">Crochetla</a>
+                <img src="https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/knitting.png"
+                    class="pulse-icon" alt="" style="width: 20px; height: 20px;">
+            </div>
+            <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Shop</a>
+        </div>
+    </header>
+
+    <main class="product-page" id="productPage">
+        <!-- Content is loaded dynamically -->
+    </main>
+
+    <!-- Image Popup -->
+    <div id="imagePopup" class="image-popup">
+        <img class="popup-content" id="popupImage">
+    </div>
+
+    <footer>
+        <p>Made with 💖 by Crochetla</p>
+    </footer>
+
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <img src="https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/knitting.png" alt="Loading..."
+            style="width: 80px;" class="pulse-icon">
+    </div>
+
+    <script>
+        // Get product ID from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get('id');
+
+        // Fetch product data from JSON
+        fetch('products.json')
+            .then(response => response.json())
+            .then(products => {
+                const product = products.find(p => p.id === productId);
+                const productPage = document.getElementById('productPage');
+
+                if (product) {
+                    // Update page title
+                    document.title = `${product.name} - Crochetla`;
+                    document.querySelector('meta[name="description"]').content =
+                        `${product.name} - Handcrafted crochet product by Crochetla. ${product.price}`;
+
+                    // Build WhatsApp link
+                    const waText = encodeURIComponent(`Hey Crochetla, I want to buy this product - ${product.name}`);
+                    const waLink = `https://wa.me/918289847962?text=${waText}`;
+
+                    // Render product
+                    productPage.innerHTML = `
+                        <div class="product-detail">
+                            <div class="product-detail-image">
+                                <img src="${product.image}" alt="${product.name}">
+                            </div>
+                            <div class="product-detail-info">
+                                <h1>${product.name}</h1>
+                                <p class="product-detail-price">${product.price}</p>
+                                <p class="product-detail-desc">${product.description}</p>
+                                <p class="custom-note">✨ This product is customizable! ✨</p>
+                                <a href="${waLink}" class="btn" target="_blank">
+                                    <i class="fa-brands fa-whatsapp"></i> Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    `;
+
+                    // Track product detail page view
+                    gtag('event', 'product_detail_view', {
+                        product_name: product.name,
+                        product_id: product.id,
+                        product_price: product.price
+                    });
+
+                    // Track "Buy Now" (WhatsApp) click
+                    const buyBtn = document.querySelector('.product-detail-info .btn');
+                    buyBtn.addEventListener('click', function () {
+                        gtag('event', 'buy_now_click', {
+                            product_name: product.name,
+                            product_id: product.id,
+                            product_price: product.price
+                        });
+                    });
+
+                    // Add image popup functionality
+                    const detailImg = document.querySelector('.product-detail-image img');
+                    const popup = document.getElementById('imagePopup');
+                    const popupImg = document.getElementById('popupImage');
+
+                    detailImg.addEventListener('click', function () {
+                        popup.style.display = 'flex';
+                        popupImg.src = this.src;
+
+                        // Track image zoom
+                        gtag('event', 'image_zoom', {
+                            product_name: product.name,
+                            product_id: product.id
+                        });
+                    });
+
+                    popup.addEventListener('click', function (event) {
+                        if (event.target === popup) {
+                            popup.style.display = 'none';
+                        }
+                    });
+                } else {
+                    // Product not found
+                    productPage.innerHTML = `
+                        <div class="product-not-found">
+                            <h1>Oops! Product not found 😢</h1>
+                            <p>The product you're looking for doesn't exist.</p>
+                            <a href="index.html" class="btn">
+                                <i class="fa-solid fa-arrow-left"></i> Back to Shop
+                            </a>
+                        </div>
+                    `;
+                }
+
+                // Hide loader
+                const loader = document.querySelector('.page-loader');
+                setTimeout(() => {
+                    loader.style.opacity = '0';
+                    setTimeout(() => {
+                        loader.style.display = 'none';
+                    }, 400);
+                }, 500);
+            })
+            .catch(error => {
+                console.error('Error loading product:', error);
+                document.getElementById('productPage').innerHTML = `
+                    <div class="product-not-found">
+                        <h1>Something went wrong 😢</h1>
+                        <p>Please try again later.</p>
+                        <a href="index.html" class="btn">
+                            <i class="fa-solid fa-arrow-left"></i> Back to Shop
+                        </a>
+                    </div>
+                `;
+            });
+    </script>
+</body>
+
+</html>

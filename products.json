@@ -1,0 +1,93 @@
+[
+    {
+        "id": "smoke-one",
+        "name": "Smoke One",
+        "price": "Rs. 300",
+        "image": "https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/Smoke_One.png",
+        "description": "A beautifully handcrafted crochet piece, perfect for adding a unique flair to your collection. Made with premium yarn and lots of love."
+    },
+    {
+        "id": "comfy-pillow",
+        "name": "Comfy Pillow",
+        "price": "Rs. 1800",
+        "image": "https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/Comfy_Pillow.png",
+        "description": "Sink into softness with this handmade crochet pillow. Perfect for your couch, bed, or reading nook. Cozy and cute!"
+    },
+    {
+        "id": "posh-purse",
+        "name": "Posh Purse",
+        "price": "Rs. 2000",
+        "image": "https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/PoshPurse.jpg",
+        "description": "A chic handcrafted crochet purse that's both stylish and functional. Carry your essentials in style!"
+    },
+    {
+        "id": "not-your-mom-blouse",
+        "name": "Not Your Mom Blouse",
+        "price": "Rs. 1200",
+        "image": "https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/Blouse.jpg",
+        "description": "A trendy crochet blouse that's anything but ordinary. Bold, stylish, and handmade with care."
+    },
+    {
+        "id": "good-bunny",
+        "name": "Bunny Boo",
+        "price": "Rs. 800",
+        "image": "https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/bunny.png",
+        "description": "An adorable crochet bunny that makes the perfect companion. Soft, cuddly, and irresistibly cute!"
+    },
+    {
+        "id": "luxe-lace-choker",
+        "name": "Luxe Lace Choker",
+        "price": "Rs. 250",
+        "image": "https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/Choker.jpg",
+        "description": "Elevate your outfit with this delicate handcrafted crochet choker. Elegant, lightweight, and one-of-a-kind."
+    },
+    {
+        "id": "petal-posh-headband",
+        "name": "Petal Posh Headband",
+        "price": "Rs. 200",
+        "image": "https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/Headband.jpg",
+        "description": "A charming crochet headband with petal details. Perfect for adding a touch of handmade beauty to any look."
+    },
+    {
+        "id": "scrunchie-diva",
+        "name": "Scrunchie Diva",
+        "price": "Rs. 129",
+        "image": "https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/scrunchy_diva.jpg",
+        "description": "Cute and stretchy crochet scrunchie that adds a pop of handmade charm to your hairstyle."
+    },
+    {
+        "id": "bad-bunny",
+        "name": "BaD BuNny",
+        "price": "Rs. 200",
+        "image": "https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/bad_bunny_keychain.jpg",
+        "description": "A quirky crochet keychain inspired by the iconic BaD BuNny vibe. Attach it to your keys or bag!"
+    },
+    {
+        "id": "bunny-boo",
+        "name": "Bunny Boo",
+        "price": "Rs. 300",
+        "image": "https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/product-2.webp",
+        "description": "A sweet little crochet bunny friend. Handmade with soft yarn, perfect as a gift or a cuddle buddy."
+    },
+    {
+        "id": "bow-sweater",
+        "name": "Bow Sweater",
+        "price": "Rs. 2,500",
+        "image": "https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/9fc9e43b-230a-4471-aece-af1171c4f9c3%7E1.jpg",
+        "description": "A stunning crochet sweater with bow details. Warm, cozy, and a true statement piece for your wardrobe."
+    },
+    {
+        "id": "ballerina-teddy",
+        "name": "Ballerina Teddy",
+        "price": "Rs. 700",
+        "image": "https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/product-1.webp",
+        "description": "A graceful crochet teddy in a ballerina outfit. Delicate, charming, and perfect for display or play."
+    },
+    {
+        "id": "bandana",
+        "name": "Bandana",
+        "price": "Rs. 300",
+        "image": "https://raw.githubusercontent.com/ancoreraj/crochtla/refs/heads/main/PXL_20260131_081150344%20(1).jpg",
+        "description": "A versatile crochet bandana that adds a handmade touch to any outfit. Stylish and comfortable."
+    }
+]
